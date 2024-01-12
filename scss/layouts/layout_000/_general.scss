@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: $comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: $black;
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  max-width: 1290px + 30px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.headline {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+a {
+  font-weight: 700;
+  color: $accent;
+  text-decoration-line: underline;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: $accentDark;
+  }
+}
+
+.button {
+  padding: 20px;
+  border-radius: 5px;
+  border-width: 0;
+  background-color: $accent;
+  line-height: 17px;
+  font-weight: 700;
+  font-family: $comfortaa;
+  color: $white;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $accentDark;
+  }
+
+  &_white {
+    padding: 19px;
+    border: 1px solid $accent;
+    background-color: $white;
+    color: $accent;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background-color: $lightPurple;
+    }
+  }
+}
