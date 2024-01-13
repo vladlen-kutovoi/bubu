@@ -34,7 +34,7 @@ main {
 }
 
 .container {
-  max-width: 1290px + 30px;
+  min-width: 1290px + 30px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -81,7 +81,7 @@ a {
   }
 
   &_white {
-    padding: 19px;
+    padding: 19px 20px;
     border: 1px solid $accent;
     background-color: $white;
     color: $accent;
@@ -92,5 +92,89 @@ a {
     &:focus {
       background-color: $lightPurple;
     }
+  }
+}
+
+label {
+  font-weight: 700;
+}
+
+input {
+  padding: 19px 20px;
+  border-radius: 5px;
+  border: 1px solid $lightGrey;
+  font-size: 15px;
+  line-height: 17px;
+  font-family: $comfortaa;
+  transition: border-color 0.2s ease;
+
+  &::placeholder {
+    color: $grey;
+    transition: color 0.2s ease;
+  }
+
+  &:focus-visible {
+    border-color: $grey;
+    outline: none;
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+
+  &:user-invalid {
+    border-color: $red;
+    outline: none;
+  }
+
+  &[type="checkbox"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    &:checked+label::after {
+      background-color: $accent;
+    }
+  }
+}
+
+.input-error {
+  color: $red;
+}
+
+label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    display: block;
+    margin-right: 10px;
+    padding: 4px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $grey;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
   }
 }
