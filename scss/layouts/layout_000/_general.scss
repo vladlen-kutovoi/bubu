@@ -34,8 +34,8 @@ main {
 }
 
 .container {
-  min-width: 1290px + 30px;
-  padding: 0 15px;
+  min-width: 1290px + 32px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -175,6 +175,6 @@ label {
     height: 10px;
     border-radius: 2px;
     background-color: transparent;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.1s ease;
   }
 }

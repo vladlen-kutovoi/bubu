@@ -13,12 +13,84 @@
 </head>
 
 <body>
-  <div class="container">
-    <form action="">
-      <input type="checkbox" id="stock">
-      <label for="stock">В наявності</label>
-    </form>
-  </div>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="img/logo.png" alt="Bubu logo" class="logo-link__img">
+      </a>
+      <nav class="header__nav">
+        <button class="menu-button">
+          <span class="visually-hidden">Menu button</span>
+        </button>
+        <div class="menu-wrapper">
+          <button class="catalog-button"><span class="catalog-button__burger"></span>Каталог</button>
+          <ul class="main-menu">
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">Про нас</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">Контакти</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">Доставка і оплата</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">Повернення і обмін</a>
+            </li>
+          </ul>
+          <ul class="extra-menu">
+            <li class="extra-menu__item">
+              <a href="tel:0631284609" class="phone-link">(063) 128-46-09</a>
+            </li>
+            <li class="extra-menu__item">
+              <ul class="socials">
+                <li class="socials__item">
+                  <a href="https://www.instagram.com/" class="socials__link" target="_blank" rel="nofollow">
+                    <svg class="socials__icon">
+                      <use xlink:href="./img/sprites.svg#instagram"></use>
+                    </svg>
+                    <span class="visually-hidden">Instagram</span>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="https://www.youtube.com/" class="socials__link" target="_blank" rel="nofollow">
+                    <svg class="socials__icon">
+                      <use xlink:href="./img/sprites.svg#youtube"></use>
+                    </svg>
+                    <span class="visually-hidden">Youtube</span>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="https://www.facebook.com/" class="socials__link" target="_blank" rel="nofollow">
+                    <svg class="socials__icon">
+                      <use xlink:href="./img/sprites.svg#facebook"></use>
+                    </svg>
+                    <span class="visually-hidden">Facebook</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="extra-menu__item">
+              <ul class="lang-toggle">
+                <li class="lang-toggle__item">
+                  <span class="lang-toggle__option lang-toggle__option_active">Укр</span>
+                </li>
+                <li class="lang-toggle__item">
+                  <span class="lang-toggle__option">Рус</span>
+                </li>
+              </ul>
+            </li>
+            <li class="extra-menu__item">
+              <svg class="socials__icon">
+                <use xlink:href="./img/sprites.svg#user"></use>
+              </svg>
+              <a href="#" class="login-button">Вхід</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
 </body>
 
 </html>

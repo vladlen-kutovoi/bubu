@@ -1,0 +1,17 @@
+.header {
+  padding: 20px 0;
+  background-color: $accent;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.logo-link {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  height: 20px;
+}
