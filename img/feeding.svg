@@ -1,0 +1,25 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="feeding" clip-path="url(#clip0_610_10909)">
+<g id="Group 1">
+<g id="Vector 12">
+<path d="M7.99001 23.3379L1.70813 18.8043C0.812456 18.1579 0.61038 16.9078 1.25678 16.0121L3.2435 13.2593L5.4986 10.1345L7.7537 7.0098L10.2343 3.57259C10.2343 3.57259 14.346 1.3662 17.4522 3.60786C20.5583 5.84952 19.7597 10.447 19.7597 10.447L10.7822 22.8865C10.1358 23.7822 8.88569 23.9843 7.99001 23.3379Z" fill="url(#paint0_linear_610_10909)"/>
+<path d="M19.7597 10.447L10.7822 22.8865C10.1358 23.7822 8.88569 23.9843 7.99001 23.3379L1.70813 18.8043C0.812456 18.1579 0.610379 16.9078 1.25678 16.0121L3.2435 13.2593M19.7597 10.447L14.997 7.00979L10.2343 3.57259M19.7597 10.447C19.7597 10.447 20.5583 5.84952 17.4522 3.60786C14.346 1.3662 10.2343 3.57259 10.2343 3.57259M10.2343 3.57259L7.7537 7.0098M7.7537 7.0098L10.9288 9.30127M7.7537 7.0098L5.4986 10.1345M5.4986 10.1345L8.67374 12.426M5.4986 10.1345L3.2435 13.2593M3.2435 13.2593L6.41864 15.5507" stroke="#505EDA" stroke-width="2"/>
+</g>
+<circle id="Ellipse 8" cx="18.3686" cy="2.3378" r="1" transform="rotate(35.8177 18.3686 2.3378)" fill="url(#paint1_linear_610_10909)" stroke="#505EDA" stroke-width="1.91565"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_610_10909" x1="17.4522" y1="3.60786" x2="4.84907" y2="21.0711" gradientUnits="userSpaceOnUse">
+<stop stop-color="#ACB5FF"/>
+<stop offset="1" stop-color="#E9E9FF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_610_10909" x1="18.3686" y1="0.37997" x2="18.3686" y2="4.29562" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D6C9F0"/>
+<stop offset="0.0001" stop-color="#D1C9F0"/>
+<stop offset="1" stop-color="#EFECF9"/>
+</linearGradient>
+<clipPath id="clip0_610_10909">
+<rect width="25" height="25" fill="white"/>
+</clipPath>
+</defs>
+</svg>

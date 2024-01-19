@@ -15,13 +15,14 @@
 <body>
   <header class="header">
     <div class="container">
+      <button class="menu-button">
+        <span class="visually-hidden">Menu button</span>
+        <span class="menu-button__item"></span>
+      </button>
       <a href="index.html" class="logo-link">
         <img src="img/logo.png" alt="Bubu logo" class="logo-link__img">
       </a>
       <nav class="header__nav">
-        <button class="menu-button">
-          <span class="visually-hidden">Menu button</span>
-        </button>
         <div class="menu-wrapper">
           <button class="catalog-button"><span class="catalog-button__burger"></span>Каталог</button>
           <ul class="main-menu">
@@ -73,24 +74,200 @@
             <li class="extra-menu__item">
               <ul class="lang-toggle">
                 <li class="lang-toggle__item">
-                  <span class="lang-toggle__option lang-toggle__option_active">Укр</span>
+                  <button class="lang-toggle__option lang-toggle__option_active">Укр</button>
                 </li>
                 <li class="lang-toggle__item">
-                  <span class="lang-toggle__option">Рус</span>
+                  <button class="lang-toggle__option">Рус</button>
                 </li>
               </ul>
             </li>
             <li class="extra-menu__item">
-              <svg class="socials__icon">
-                <use xlink:href="./img/sprites.svg#user"></use>
-              </svg>
-              <a href="#" class="login-button">Вхід</a>
+              <a href="#" class="login-button">
+                <svg class="login-button__icon">
+                  <use xlink:href="./img/sprites.svg#user"></use>
+                </svg>
+                Вхід</a>
             </li>
           </ul>
+          <div class="catalog" id="catalog">
+            <button class="catalog__return">Меню</button>
+            <ul class="catalog__list">
+              <li class="catalog__list__item">
+                <button class="catalog__button">
+                  <svg class="catalog__icon">
+                    <use xlink:href="./img/sprites.svg#carriage"></use>
+                  </svg>
+                  Дитячі коляски
+                </button>
+                <div class="catalog">
+                  <button class="catalog__return">Каталог</button>
+                  <ul class="catalog__list">
+                    <li class="catalog__list__item">
+                      <a href="#" class="catalog__link">Коляски 2 в 1</a>
+                    </li>
+                    <li class="catalog__list__item">
+                      <a href="#" class="catalog__link">Зимові конверти</a>
+                    </li>
+                    <li class="catalog__list__item">
+                      <a href="#" class="catalog__link">Аксесуари та комплектуючі</a>
+                    </li>
+                    <li class="catalog__list__item">
+                      <a href="#" class="catalog__link">Муфти</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="catalog__list__item">
+                <button class="catalog__button">
+                  <svg class="catalog__icon">
+                    <use xlink:href="./img/sprites.svg#room"></use>
+                  </svg>
+                  Дитяча кімната
+                </button>
+                <div class="catalog">
+                  <button class="catalog__return">Каталог</button>
+                  <ul class="catalog__list">
+                    <li class="catalog__list__item">
+                      <a href="#" class="catalog__link">Дитяча кімната</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="catalog__list__item">
+                <button class="catalog__button">
+                  <svg class="catalog__icon">
+                    <use xlink:href="./img/sprites.svg#chair"></use>
+                  </svg>
+                  Стільці і шезлонги
+                </button>
+                <div class="catalog">
+                  <button class="catalog__return">Каталог</button>
+                  <ul class="catalog__list">
+                    <li class="catalog__list__item">
+                      <a href="#" class="catalog__link">Стільці і шезлонги</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="catalog__list__item">
+                <button class="catalog__button">
+                  <svg class="catalog__icon">
+                    <use xlink:href="./img/sprites.svg#feeding"></use>
+                  </svg>
+                  Для годування
+                </button>
+                <div class="catalog">
+                  <button class="catalog__return">Каталог</button>
+                  <ul class="catalog__list">
+                    <li class="catalog__list__item">
+                      <a href="#" class="catalog__link">Для годування</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="catalog__list__item">
+                <button class="catalog__button">
+                  <svg class="catalog__icon">
+                    <use xlink:href="./img/sprites.svg#soap"></use>
+                  </svg>
+                  Гігієна і догляд
+                </button>
+                <div class="catalog">
+                  <button class="catalog__return">Каталог</button>
+                  <ul class="catalog__list">
+                    <li class="catalog__list__item">
+                      <a href="#" class="catalog__link">Гігієна і догляд</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="catalog__list__item">
+                <button class="catalog__button">
+                  <svg class="catalog__icon">
+                    <use xlink:href="./img/sprites.svg#autochair"></use>
+                  </svg>
+                  Автокрісла
+                </button>
+                <div class="catalog">
+                  <button class="catalog__return">Каталог</button>
+                  <ul class="catalog__list">
+                    <li class="catalog__list__item">
+                      <a href="#" class="catalog__link">Автокрісла</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="catalog__list__item">
+                <button class="catalog__button">
+                  <svg class="catalog__icon">
+                    <use xlink:href="./img/sprites.svg#car"></use>
+                  </svg>
+                  Дитячий транспорт
+                </button>
+                <div class="catalog">
+                  <button class="catalog__return">Каталог</button>
+                  <ul class="catalog__list">
+                    <li class="catalog__list__item">
+                      <a href="#" class="catalog__link">Дитячий транспорт</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="catalog__list__item">
+                <button class="catalog__button">
+                  <svg class="catalog__icon">
+                    <use xlink:href="./img/sprites.svg#toy"></use>
+                  </svg>
+                  Іграшки
+                </button>
+                <div class="catalog">
+                  <button class="catalog__return">Каталог</button>
+                  <ul class="catalog__list">
+                    <li class="catalog__list__item">
+                      <a href="#" class="catalog__link">Іграшки</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="catalog__list__item">
+                <button class="catalog__button">
+                  <svg class="catalog__icon">
+                    <use xlink:href="./img/sprites.svg#clothes"></use>
+                  </svg>
+                  Одяг
+                </button>
+                <div class="catalog">
+                  <button class="catalog__return">Каталог</button>
+                  <ul class="catalog__list">
+                    <li class="catalog__list__item">
+                      <a href="#" class="catalog__link">Одяг</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="catalog__list__item">
+                <button class="catalog__button">
+                  <svg class="catalog__icon">
+                    <use xlink:href="./img/sprites.svg#new"></use>
+                  </svg>
+                  Новий товар
+                </button>
+                <div class="catalog">
+                  <button class="catalog__return">Каталог</button>
+                  <ul class="catalog__list">
+                    <li class="catalog__list__item">
+                      <a href="#" class="catalog__link">Новий товар</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </div>
   </header>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

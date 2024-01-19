@@ -1,11 +1,23 @@
 .header__nav {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
+  z-index: 5;
   width: 266px;
   height: 100vh;
+  max-height: 100vh;
   padding: 30px 16px;
   background-color: $accent;
+  transition: left 0.2s ease;
+  overflow: auto;
+
+  &_active {
+    left: 0;
+
+    .catalog_active {
+      left: 0;
+    }
+  }
 
   .catalog-button {
     margin-bottom: 40px;
@@ -120,4 +132,158 @@
 
 .socials {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__item {
+    &:not(:last-of-type) {
+      margin-right: 20px;
+    }
+  }
+
+  &__link {
+    display: flex;
+
+    &:hover,
+    &:focus {
+      .socials__icon {
+        stroke: $white;
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 23px;
+    height: 20px;
+    stroke: $pink;
+    transition: stroke 0.2s ease;
+  }
+}
+
+.lang-toggle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__item {
+    position: relative;
+
+    &:not(:last-of-type) {
+      margin-right: 18px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 50%;
+        right: -9px;
+        width: 1px;
+        height: 15px;
+        transform: translate(50%, -50%);
+        background-color: $white;
+      }
+    }
+  }
+
+  &__option {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-weight: 300;
+    color: $pink;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &_active {
+      font-weight: 700;
+      color: $white;
+      text-decoration: none;
+      cursor: auto;
+    }
+  }
+}
+
+.login-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  color: $white;
+  font-weight: 500;
+
+  &__icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    stroke: $white;
+  }
+
+  &:hover,
+  &:focus {
+    color: $pink;
+  }
+}
+
+.catalog {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 6;
+  width: 266px;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: auto;
+  padding: 30px 16px;
+  background-color: $white;
+  transition: left 0.2s ease;
+
+  &__list {
+    &__item {
+      &:not(:last-of-type) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__return,
+  &__button,
+  &__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: $black;
+    font-family: $comfortaa;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+  }
+
+  &__return {
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-weight: 500;
+
+    &::before {
+      content: url('../../../img/arrow-left.svg');
+      margin-right: 10px;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
 }
