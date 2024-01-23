@@ -1,0 +1,9 @@
+body {
+  &.no-scroll {
+    overflow: auto;
+  }
+}
+
+.overlay {
+  display: none;
+}

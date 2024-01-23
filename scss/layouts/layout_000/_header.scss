@@ -1,5 +1,6 @@
 .header {
   position: sticky;
+  z-index: 4;
   top: 0;
   width: 100%;
   padding: 20px 0;
@@ -8,14 +9,21 @@
   .container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 .logo-link {
   display: flex;
   flex-direction: column;
+  margin-right: auto;
   width: 90px;
   height: 20px;
+
+  &__img {
+    width: auto;
+    height: 100%;
+  }
 }
 
 .menu-button {
@@ -72,6 +80,10 @@
     transition: left 0.15s ease;
     transition-delay: 0.15s;
 
+    &+.logo-link {
+      margin-left: 40px;
+    }
+
     .menu-button__item {
       display: none;
     }
@@ -90,5 +102,119 @@
     &::after {
       transform: translate(-50%, -50%) rotate(-45deg);
     }
+  }
+}
+
+.info-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  &__counter {
+    display: none;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: $comfortaa;
+    color: $whitePurple;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &_cart {
+      .info-list__button {
+        position: relative;
+      }
+
+      .info-list__counter {
+        position: absolute;
+        top: 15px;
+        right: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 15px;
+        min-height: 15px;
+        aspect-ratio: 1;
+        padding: 2px;
+        border-width: 0;
+        border-radius: 50%;
+        color: $white;
+        background-color: $discount;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__icon {
+    height: 20px;
+  }
+}
+
+.search {
+  position: absolute;
+  z-index: 5;
+  top: -150%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  background-color: $accent;
+  transition: top 0.2s ease;
+
+  &.active {
+    top: 0;
+  }
+
+  &__form {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 14px 0 14px 15px;
+    border-width: 1px 0 1px 1px;
+    border-radius: 10px 0 0 10px;
+    color: $white;
+    border-color: $white;
+    background-color: rgba(255, 255, 255, 0.15);
+
+    &::placeholder {
+      font-weight: 300;
+      color: $white;
+    }
+
+    &:focus-visible {
+      border-color: $white;
+    }
+  }
+
+  &__button {
+    display: flex;
+    padding: 14px 15px 14px 8px;
+    border: 1px solid;
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
+    border-color: $white;
+    background-color: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 15px;
+    height: 15px;
   }
 }

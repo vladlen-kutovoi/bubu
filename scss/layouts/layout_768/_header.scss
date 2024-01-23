@@ -1,0 +1,57 @@
+.header {
+  padding: 14px 0;
+
+  .container {
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.logo-link {
+  width: 138px;
+  height: 32px;
+}
+
+.menu-button {
+  margin: 0;
+
+  &_active {
+    &+.logo-link {
+      margin-left: 60px;
+    }
+  }
+}
+
+.info-list {
+  &__item {
+    &_search {
+      display: none;
+    }
+
+    &_cart {
+      .info-list__counter {
+        position: static;
+        min-width: 21px;
+        min-height: 21px;
+      }
+    }
+  }
+
+  &__counter {
+    display: inline;
+    font-size: 15px;
+  }
+
+  &__button {
+    margin-right: 7px;
+  }
+}
+
+.search {
+  position: static;
+  z-index: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  flex-grow: 1;
+}

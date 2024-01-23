@@ -1,0 +1,21 @@
+.slider-section {
+  padding-top: 30px;
+}
+
+.slider {
+  &__list {
+    &__item {
+      height: 435px;
+    }
+  }
+
+  &__button {
+    &_left {
+      left: 13px;
+    }
+
+    &_right {
+      right: 13px;
+    }
+  }
+}

@@ -169,4 +169,62 @@
       </clipPath>
     </defs>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" id="search">
+    <g stroke="#fff" stroke-width="2" stroke-linejoin="round">
+      <path d="m18 18.036-4.105-4.106" stroke-linecap="round"></path>
+      <circle cx="8.842" cy="8.246" r="7.211"></circle>
+    </g>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 22" id="favorite">
+    <path d="M24 6.151c0 5.846-7.434 10.962-11.152 13.885C11.454 20.036 1 11.997 1 6.15c0-3.654 3.485-5.115 4.879-5.115 2.788 0 6.273 4.384 6.97 4.384.697 0 3.484-4.384 6.272-4.384 1.394 0 4.879 0 4.879 5.115Z" stroke="#fff" stroke-width="2" stroke-linejoin="round"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 21" id="cart">
+    <path d="M21.403 15.179h-9.056a3 3 0 0 1-2.87-2.125L6.75 4.11h16.199a3 3 0 0 1 2.87 3.875l-1.546 5.069a3 3 0 0 1-2.87 2.125Z" fill="#fff"></path>
+    <path d="M0 1.036h3.528a3 3 0 0 1 2.818 1.969L6.75 4.11m0 0 2.727 8.944a3 3 0 0 0 2.87 2.125h9.056a3 3 0 0 0 2.87-2.125l1.545-5.069a3 3 0 0 0-2.87-3.875H6.75Z" stroke="#fff" stroke-width="2"></path>
+    <circle cx="12.857" cy="19.036" r="1.929" fill="#fff"></circle>
+    <circle cx="21.214" cy="19.036" r="1.929" fill="#fff"></circle>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 21" id="сomparison">
+    <g stroke="#fff" stroke-width="2">
+      <path d="M4.27 14.33H2.526c-.72 0-1.188.733-.79 1.333 1.251 1.88 3.423 3.784 5.804 3.784 2.38 0 4.552-1.904 5.803-3.784.399-.6-.07-1.334-.79-1.334H10.81m-6.539 0h6.54m-6.54 0 2.34-5.9c.334-.842 1.525-.842 1.86 0l2.34 5.9M20.192 14.33h-1.745c-.72 0-1.188.733-.79 1.333 1.252 1.88 3.423 3.784 5.804 3.784 2.38 0 4.553-1.904 5.803-3.784.4-.6-.069-1.334-.789-1.334h-1.744m-6.54 0h6.54m-6.54 0 2.34-5.9c.334-.842 1.526-.842 1.86 0l2.34 5.9"></path>
+      <circle cx="15.785" cy="3.447" r="2.412"></circle>
+      <path d="m6.687 4.931 6.255-1.137M18.628 3.794l5.686 1.137" stroke-linecap="round"></path>
+    </g>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 62" id="right">
+    <g filter="url(#a)">
+      <circle cx="31" cy="29" transform="rotate(-180 31 29)" fill="#fff" r="24"></circle>
+    </g>
+    <path d="M30.796 39 41 29m0 0L30.796 19M41 29H21" stroke="#D03664" stroke-width="2"></path>
+    <defs>
+      <filter id="a" x="0" y="0" width="62" height="62" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+        <feOffset dy="2"></feOffset>
+        <feGaussianBlur stdDeviation="3.5"></feGaussianBlur>
+        <feComposite in2="hardAlpha" operator="out"></feComposite>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_681_2166"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow_681_2166" result="shape"></feBlend>
+      </filter>
+    </defs>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 62" id="left">
+    <g filter="url(#a)">
+      <circle cx="29" cy="29" r="24" fill="#fff"></circle>
+    </g>
+    <path d="M29.204 18.52 19 29.025m0 0 10.204 10.506M19 29.025h20" stroke="#D03664" stroke-width="2"></path>
+    <defs>
+      <filter id="a" x="-2" y="0" width="62" height="62" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+        <feOffset dy="2"></feOffset>
+        <feGaussianBlur stdDeviation="3.5"></feGaussianBlur>
+        <feComposite in2="hardAlpha" operator="out"></feComposite>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_681_2163"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow_681_2163" result="shape"></feBlend>
+      </filter>
+    </defs>
+  </symbol>
 </svg>

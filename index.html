@@ -9,6 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Slider  styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+  <!-- Custom styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -23,251 +26,370 @@
         <img src="img/logo.png" alt="Bubu logo" class="logo-link__img">
       </a>
       <nav class="header__nav">
-        <div class="menu-wrapper">
-          <button class="catalog-button"><span class="catalog-button__burger"></span>Каталог</button>
-          <ul class="main-menu">
-            <li class="main-menu__item">
-              <a href="#" class="main-menu__link">Про нас</a>
-            </li>
-            <li class="main-menu__item">
-              <a href="#" class="main-menu__link">Контакти</a>
-            </li>
-            <li class="main-menu__item">
-              <a href="#" class="main-menu__link">Доставка і оплата</a>
-            </li>
-            <li class="main-menu__item">
-              <a href="#" class="main-menu__link">Повернення і обмін</a>
-            </li>
-          </ul>
-          <ul class="extra-menu">
-            <li class="extra-menu__item">
-              <a href="tel:0631284609" class="phone-link">(063) 128-46-09</a>
-            </li>
-            <li class="extra-menu__item">
-              <ul class="socials">
-                <li class="socials__item">
-                  <a href="https://www.instagram.com/" class="socials__link" target="_blank" rel="nofollow">
-                    <svg class="socials__icon">
-                      <use xlink:href="./img/sprites.svg#instagram"></use>
-                    </svg>
-                    <span class="visually-hidden">Instagram</span>
-                  </a>
-                </li>
-                <li class="socials__item">
-                  <a href="https://www.youtube.com/" class="socials__link" target="_blank" rel="nofollow">
-                    <svg class="socials__icon">
-                      <use xlink:href="./img/sprites.svg#youtube"></use>
-                    </svg>
-                    <span class="visually-hidden">Youtube</span>
-                  </a>
-                </li>
-                <li class="socials__item">
-                  <a href="https://www.facebook.com/" class="socials__link" target="_blank" rel="nofollow">
-                    <svg class="socials__icon">
-                      <use xlink:href="./img/sprites.svg#facebook"></use>
-                    </svg>
-                    <span class="visually-hidden">Facebook</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="extra-menu__item">
-              <ul class="lang-toggle">
-                <li class="lang-toggle__item">
-                  <button class="lang-toggle__option lang-toggle__option_active">Укр</button>
-                </li>
-                <li class="lang-toggle__item">
-                  <button class="lang-toggle__option">Рус</button>
-                </li>
-              </ul>
-            </li>
-            <li class="extra-menu__item">
-              <a href="#" class="login-button">
-                <svg class="login-button__icon">
-                  <use xlink:href="./img/sprites.svg#user"></use>
-                </svg>
-                Вхід</a>
-            </li>
-          </ul>
-          <div class="catalog" id="catalog">
-            <button class="catalog__return">Меню</button>
-            <ul class="catalog__list">
-              <li class="catalog__list__item">
-                <button class="catalog__button">
-                  <svg class="catalog__icon">
-                    <use xlink:href="./img/sprites.svg#carriage"></use>
+        <button class="catalog-button"><span class="catalog-button__burger"></span>Каталог</button>
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">Про нас</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">Контакти</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">Доставка і оплата</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">Повернення і обмін</a>
+          </li>
+        </ul>
+        <ul class="extra-menu">
+          <li class="extra-menu__item">
+            <a href="tel:0631284609" class="phone-link">(063) 128-46-09</a>
+          </li>
+          <li class="extra-menu__item">
+            <ul class="socials">
+              <li class="socials__item">
+                <a href="https://www.instagram.com/" class="socials__link" target="_blank" rel="nofollow">
+                  <svg class="socials__icon">
+                    <use xlink:href="./img/sprites.svg#instagram"></use>
                   </svg>
-                  Дитячі коляски
-                </button>
-                <div class="catalog">
-                  <button class="catalog__return">Каталог</button>
-                  <ul class="catalog__list">
-                    <li class="catalog__list__item">
-                      <a href="#" class="catalog__link">Коляски 2 в 1</a>
-                    </li>
-                    <li class="catalog__list__item">
-                      <a href="#" class="catalog__link">Зимові конверти</a>
-                    </li>
-                    <li class="catalog__list__item">
-                      <a href="#" class="catalog__link">Аксесуари та комплектуючі</a>
-                    </li>
-                    <li class="catalog__list__item">
-                      <a href="#" class="catalog__link">Муфти</a>
-                    </li>
-                  </ul>
-                </div>
+                  <span class="visually-hidden">Instagram</span>
+                </a>
               </li>
-              <li class="catalog__list__item">
-                <button class="catalog__button">
-                  <svg class="catalog__icon">
-                    <use xlink:href="./img/sprites.svg#room"></use>
+              <li class="socials__item">
+                <a href="https://www.youtube.com/" class="socials__link" target="_blank" rel="nofollow">
+                  <svg class="socials__icon">
+                    <use xlink:href="./img/sprites.svg#youtube"></use>
                   </svg>
-                  Дитяча кімната
-                </button>
-                <div class="catalog">
-                  <button class="catalog__return">Каталог</button>
-                  <ul class="catalog__list">
-                    <li class="catalog__list__item">
-                      <a href="#" class="catalog__link">Дитяча кімната</a>
-                    </li>
-                  </ul>
-                </div>
+                  <span class="visually-hidden">Youtube</span>
+                </a>
               </li>
-              <li class="catalog__list__item">
-                <button class="catalog__button">
-                  <svg class="catalog__icon">
-                    <use xlink:href="./img/sprites.svg#chair"></use>
+              <li class="socials__item">
+                <a href="https://www.facebook.com/" class="socials__link" target="_blank" rel="nofollow">
+                  <svg class="socials__icon">
+                    <use xlink:href="./img/sprites.svg#facebook"></use>
                   </svg>
-                  Стільці і шезлонги
-                </button>
-                <div class="catalog">
-                  <button class="catalog__return">Каталог</button>
-                  <ul class="catalog__list">
-                    <li class="catalog__list__item">
-                      <a href="#" class="catalog__link">Стільці і шезлонги</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="catalog__list__item">
-                <button class="catalog__button">
-                  <svg class="catalog__icon">
-                    <use xlink:href="./img/sprites.svg#feeding"></use>
-                  </svg>
-                  Для годування
-                </button>
-                <div class="catalog">
-                  <button class="catalog__return">Каталог</button>
-                  <ul class="catalog__list">
-                    <li class="catalog__list__item">
-                      <a href="#" class="catalog__link">Для годування</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="catalog__list__item">
-                <button class="catalog__button">
-                  <svg class="catalog__icon">
-                    <use xlink:href="./img/sprites.svg#soap"></use>
-                  </svg>
-                  Гігієна і догляд
-                </button>
-                <div class="catalog">
-                  <button class="catalog__return">Каталог</button>
-                  <ul class="catalog__list">
-                    <li class="catalog__list__item">
-                      <a href="#" class="catalog__link">Гігієна і догляд</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="catalog__list__item">
-                <button class="catalog__button">
-                  <svg class="catalog__icon">
-                    <use xlink:href="./img/sprites.svg#autochair"></use>
-                  </svg>
-                  Автокрісла
-                </button>
-                <div class="catalog">
-                  <button class="catalog__return">Каталог</button>
-                  <ul class="catalog__list">
-                    <li class="catalog__list__item">
-                      <a href="#" class="catalog__link">Автокрісла</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="catalog__list__item">
-                <button class="catalog__button">
-                  <svg class="catalog__icon">
-                    <use xlink:href="./img/sprites.svg#car"></use>
-                  </svg>
-                  Дитячий транспорт
-                </button>
-                <div class="catalog">
-                  <button class="catalog__return">Каталог</button>
-                  <ul class="catalog__list">
-                    <li class="catalog__list__item">
-                      <a href="#" class="catalog__link">Дитячий транспорт</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="catalog__list__item">
-                <button class="catalog__button">
-                  <svg class="catalog__icon">
-                    <use xlink:href="./img/sprites.svg#toy"></use>
-                  </svg>
-                  Іграшки
-                </button>
-                <div class="catalog">
-                  <button class="catalog__return">Каталог</button>
-                  <ul class="catalog__list">
-                    <li class="catalog__list__item">
-                      <a href="#" class="catalog__link">Іграшки</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="catalog__list__item">
-                <button class="catalog__button">
-                  <svg class="catalog__icon">
-                    <use xlink:href="./img/sprites.svg#clothes"></use>
-                  </svg>
-                  Одяг
-                </button>
-                <div class="catalog">
-                  <button class="catalog__return">Каталог</button>
-                  <ul class="catalog__list">
-                    <li class="catalog__list__item">
-                      <a href="#" class="catalog__link">Одяг</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="catalog__list__item">
-                <button class="catalog__button">
-                  <svg class="catalog__icon">
-                    <use xlink:href="./img/sprites.svg#new"></use>
-                  </svg>
-                  Новий товар
-                </button>
-                <div class="catalog">
-                  <button class="catalog__return">Каталог</button>
-                  <ul class="catalog__list">
-                    <li class="catalog__list__item">
-                      <a href="#" class="catalog__link">Новий товар</a>
-                    </li>
-                  </ul>
-                </div>
+                  <span class="visually-hidden">Facebook</span>
+                </a>
               </li>
             </ul>
-          </div>
+          </li>
+          <li class="extra-menu__item">
+            <ul class="lang-toggle">
+              <li class="lang-toggle__item">
+                <button class="lang-toggle__option lang-toggle__option_active">Укр</button>
+              </li>
+              <li class="lang-toggle__item">
+                <button class="lang-toggle__option">Рус</button>
+              </li>
+            </ul>
+          </li>
+          <li class="extra-menu__item">
+            <a href="#" class="login-button">
+              <svg class="login-button__icon">
+                <use xlink:href="./img/sprites.svg#user"></use>
+              </svg>
+              Вхід</a>
+          </li>
+        </ul>
+        <div class="catalog" id="catalog">
+          <button class="catalog__return">Меню</button>
+          <ul class="catalog__list">
+            <li class="catalog__list__item">
+              <button class="catalog__button">
+                <svg class="catalog__icon">
+                  <use xlink:href="./img/sprites.svg#carriage"></use>
+                </svg>
+                Дитячі коляски
+              </button>
+              <div class="catalog">
+                <button class="catalog__return">Каталог</button>
+                <ul class="catalog__list">
+                  <li class="catalog__list__item">
+                    <a href="#" class="catalog__link">Коляски 2 в 1</a>
+                  </li>
+                  <li class="catalog__list__item">
+                    <a href="#" class="catalog__link">Зимові конверти</a>
+                  </li>
+                  <li class="catalog__list__item">
+                    <a href="#" class="catalog__link">Аксесуари та комплектуючі</a>
+                  </li>
+                  <li class="catalog__list__item">
+                    <a href="#" class="catalog__link">Муфти</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__list__item">
+              <button class="catalog__button">
+                <svg class="catalog__icon">
+                  <use xlink:href="./img/sprites.svg#room"></use>
+                </svg>
+                Дитяча кімната
+              </button>
+              <div class="catalog">
+                <button class="catalog__return">Каталог</button>
+                <ul class="catalog__list">
+                  <li class="catalog__list__item">
+                    <a href="#" class="catalog__link">Дитяча кімната</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__list__item">
+              <button class="catalog__button">
+                <svg class="catalog__icon">
+                  <use xlink:href="./img/sprites.svg#chair"></use>
+                </svg>
+                Стільці і шезлонги
+              </button>
+              <div class="catalog">
+                <button class="catalog__return">Каталог</button>
+                <ul class="catalog__list">
+                  <li class="catalog__list__item">
+                    <a href="#" class="catalog__link">Стільці і шезлонги</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__list__item">
+              <button class="catalog__button">
+                <svg class="catalog__icon">
+                  <use xlink:href="./img/sprites.svg#feeding"></use>
+                </svg>
+                Для годування
+              </button>
+              <div class="catalog">
+                <button class="catalog__return">Каталог</button>
+                <ul class="catalog__list">
+                  <li class="catalog__list__item">
+                    <a href="#" class="catalog__link">Для годування</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__list__item">
+              <button class="catalog__button">
+                <svg class="catalog__icon">
+                  <use xlink:href="./img/sprites.svg#soap"></use>
+                </svg>
+                Гігієна і догляд
+              </button>
+              <div class="catalog">
+                <button class="catalog__return">Каталог</button>
+                <ul class="catalog__list">
+                  <li class="catalog__list__item">
+                    <a href="#" class="catalog__link">Гігієна і догляд</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__list__item">
+              <button class="catalog__button">
+                <svg class="catalog__icon">
+                  <use xlink:href="./img/sprites.svg#autochair"></use>
+                </svg>
+                Автокрісла
+              </button>
+              <div class="catalog">
+                <button class="catalog__return">Каталог</button>
+                <ul class="catalog__list">
+                  <li class="catalog__list__item">
+                    <a href="#" class="catalog__link">Автокрісла</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__list__item">
+              <button class="catalog__button">
+                <svg class="catalog__icon">
+                  <use xlink:href="./img/sprites.svg#car"></use>
+                </svg>
+                Дитячий транспорт
+              </button>
+              <div class="catalog">
+                <button class="catalog__return">Каталог</button>
+                <ul class="catalog__list">
+                  <li class="catalog__list__item">
+                    <a href="#" class="catalog__link">Дитячий транспорт</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__list__item">
+              <button class="catalog__button">
+                <svg class="catalog__icon">
+                  <use xlink:href="./img/sprites.svg#toy"></use>
+                </svg>
+                Іграшки
+              </button>
+              <div class="catalog">
+                <button class="catalog__return">Каталог</button>
+                <ul class="catalog__list">
+                  <li class="catalog__list__item">
+                    <a href="#" class="catalog__link">Іграшки</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__list__item">
+              <button class="catalog__button">
+                <svg class="catalog__icon">
+                  <use xlink:href="./img/sprites.svg#clothes"></use>
+                </svg>
+                Одяг
+              </button>
+              <div class="catalog">
+                <button class="catalog__return">Каталог</button>
+                <ul class="catalog__list">
+                  <li class="catalog__list__item">
+                    <a href="#" class="catalog__link">Одяг</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__list__item">
+              <button class="catalog__button">
+                <svg class="catalog__icon">
+                  <use xlink:href="./img/sprites.svg#new"></use>
+                </svg>
+                Новий товар
+              </button>
+              <div class="catalog">
+                <button class="catalog__return">Каталог</button>
+                <ul class="catalog__list">
+                  <li class="catalog__list__item">
+                    <a href="#" class="catalog__link">Новий товар</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
       </nav>
+      <div class="search">
+        <form class="search__form">
+          <input class="search__input" type="text" name="search" placeholder="Я шукаю...">
+          <button class="search__button" type="submit">
+            <svg class="search__icon" width="16" height="17" viewBox="0 0 16 17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g id="search2">
+                <path id="Vector 9" d="M15 16.2727L11.4546 12.7273" stroke="white" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <circle id="Ellipse 7" cx="7.09091" cy="7.81817" r="6.59091" stroke="white" stroke-linejoin="round" />
+              </g>
+            </svg>
+            <span class="visually-hidden">Шукати</span>
+          </button>
+        </form>
+      </div>
+      <ul class="info-list">
+        <li class="info-list__item info-list__item_search">
+          <button class="info-list__button">
+            <svg class="info-list__icon" width="19" height="20" viewBox="0 0 19 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g id="search">
+                <path id="Vector 91" d="M18.0003 18.0357L13.895 13.9304" stroke="white" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <circle id="Ellipse 71" cx="8.84234" cy="8.24621" r="7.21051" stroke="white" stroke-width="2"
+                  stroke-linejoin="round" />
+              </g>
+            </svg>
+            <span class="visually-hidden">Пошук</span>
+          </button>
+        </li>
+        <li class="info-list__item">
+          <button class="info-list__button">
+            <svg class="info-list__icon" width="31" height="21" viewBox="0 0 31 21" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g id="&#209;&#129;omparison">
+                <path id="Vector 4"
+                  d="M4.2701 14.3295H2.5257C1.80553 14.3295 1.33764 15.0631 1.73654 15.6627C2.98717 17.5427 5.159 19.4472 7.5397 19.4472C9.92041 19.4472 12.0922 17.5427 13.3429 15.6627C13.7418 15.0631 13.2739 14.3295 12.5537 14.3295H10.8093M4.2701 14.3295H7.5397H10.8093M4.2701 14.3295L6.61013 8.4286C6.94396 7.58676 8.13545 7.58676 8.46928 8.4286L10.8093 14.3295"
+                  stroke="white" stroke-width="2" />
+                <path id="Vector 8"
+                  d="M20.1915 14.3295H18.4471C17.7269 14.3295 17.259 15.0631 17.6579 15.6627C18.9086 17.5427 21.0804 19.4472 23.4611 19.4472C25.8418 19.4472 28.0136 17.5427 29.2643 15.6627C29.6632 15.0631 29.1953 14.3295 28.4751 14.3295H26.7307M20.1915 14.3295H23.4611H26.7307M20.1915 14.3295L22.5315 8.4286C22.8653 7.58676 24.0568 7.58676 24.3907 8.4286L26.7307 14.3295"
+                  stroke="white" stroke-width="2" />
+                <circle id="Ellipse 6" cx="15.7848" cy="3.44747" r="2.41176" stroke="white" stroke-width="2" />
+                <path id="Vector 6" d="M6.68701 4.93117L12.9419 3.79391" stroke="white" stroke-width="2"
+                  stroke-linecap="round" />
+                <path id="Vector 7" d="M18.6279 3.79391L24.3142 4.93117" stroke="white" stroke-width="2"
+                  stroke-linecap="round" />
+              </g>
+            </svg>
+            <span class="visually-hidden">Порівняти</span>
+          </button>
+          <span class="info-list__counter">0</span>
+        </li>
+        <li class="info-list__item">
+          <button class="info-list__button">
+            <svg class="info-list__icon" width="25" height="22" viewBox="0 0 25 22" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path id="favorite"
+                d="M24 6.15109C24 11.9972 16.5657 17.1126 12.8485 20.0357C11.4545 20.0357 1 11.9972 1 6.15109C1 2.49724 4.48485 1.03571 5.87879 1.03571C8.66667 1.03571 12.1515 5.42032 12.8485 5.42032C13.5455 5.42032 16.3333 1.03571 19.1212 1.03571C20.5152 1.03571 24 1.03571 24 6.15109Z"
+                stroke="white" stroke-width="2" stroke-linejoin="round" />
+            </svg>
+            <span class="visually-hidden">Збережені</span>
+          </button>
+          <span class="info-list__counter">0</span>
+        </li>
+        <li class="info-list__item info-list__item_cart">
+          <button class="info-list__button">
+            <svg class="info-list__icon" width="27" height="21" viewBox="0 0 27 21" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g id="cart">
+                <g id="Vector 3">
+                  <path
+                    d="M21.4034 15.1786H12.3466C11.0268 15.1786 9.86198 14.316 9.47704 13.0536L6.75 4.11024H22.9489C24.9641 4.11024 26.4062 6.05762 25.8184 7.98524L24.273 13.0536C23.888 14.316 22.7232 15.1786 21.4034 15.1786Z"
+                    fill="white" />
+                  <path
+                    d="M0 1.03571H3.5282C4.78751 1.03571 5.91278 1.82219 6.34552 3.00482L6.75 4.11024M6.75 4.11024L9.47704 13.0536C9.86198 14.316 11.0268 15.1786 12.3466 15.1786H21.4034C22.7232 15.1786 23.888 14.316 24.273 13.0536L25.8184 7.98524C26.4062 6.05762 24.9641 4.11024 22.9489 4.11024H6.75Z"
+                    stroke="white" stroke-width="2" />
+                </g>
+                <circle id="Ellipse 2" cx="12.8573" cy="19.0357" r="1.92857" fill="white" />
+                <circle id="Ellipse 3" cx="21.2142" cy="19.0357" r="1.92857" fill="white" />
+              </g>
+            </svg>
+            <span class="visually-hidden">Кошик</span>
+          </button>
+          <span class="info-list__counter">1</span>
+        </li>
+      </ul>
     </div>
   </header>
+  <main>
+    <section class="slider-section">
+      <div class="container">
+        <div class="slider">
+          <ul class="slider__list">
+            <li class="slider__list__item">
+              <img class="slider__image" src="img/slide.png" alt="Знижки на ліжечка">
+            </li>
+            <li class="slider__list__item">
+              <img class="slider__image" src="img/slide.png" alt="Знижки на ліжечка">
+            </li>
+            <li class="slider__list__item">
+              <img class="slider__image" src="img/slide.png" alt="Знижки на ліжечка">
+            </li>
+          </ul>
+          <button class="slider__button slider__button_left">
+            <svg class="slider__button__icon">
+              <use xlink:href="./img/sprites.svg#left"></use>
+            </svg>
+            <span class="visually-hidden">Slide left</span>
+          </button>
+          <button class="slider__button slider__button_right">
+            <svg class="slider__button__icon">
+              <use xlink:href="./img/sprites.svg#right"></use>
+            </svg>
+            <span class="visually-hidden">Slide right</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script src="js/script.js"></script>
+  <script>
+  </script>
 </body>
 
 </html>

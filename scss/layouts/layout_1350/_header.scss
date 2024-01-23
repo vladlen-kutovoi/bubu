@@ -1,0 +1,26 @@
+.header {
+  padding: 20px 0 16px 0;
+
+  .container {
+    position: relative;
+    gap: 42px 30px;
+
+    .header__nav {
+      margin: 0;
+    }
+  }
+}
+
+.menu-button {
+  display: none;
+
+  &_active {
+    &+.logo-link {
+      margin-left: 0;
+    }
+  }
+}
+
+.search {
+  margin-left: 264px;
+}
