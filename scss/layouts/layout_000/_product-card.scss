@@ -1,0 +1,113 @@
+.product {
+  position: relative;
+  width: 156px;
+
+  &:hover,
+  &:focus {
+    .product__hover-buttons {
+      display: flex;
+    }
+
+    &:has(.product__out-of-stock) {
+      .product__hover-buttons {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    text-decoration: none;
+  }
+
+  &__img {
+    border-radius: 10px;
+  }
+
+  &__discount {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: $discount;
+    color: $white;
+    font-size: 14px;
+
+    &::before {
+      content: '-';
+    }
+
+    &::after {
+      content: '%';
+    }
+  }
+
+  &__title {
+    color: $black;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__price-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__price {
+    font-size: 12px;
+    color: $darkGrey;
+
+    &:has(+ .product__discount-price) {
+      text-decoration: line-through;
+    }
+  }
+
+  &__discount-price {
+    color: $discount;
+  }
+
+  &__price,
+  &__discount-price {
+    &::after {
+      content: ' грн';
+      font-weight: 300;
+    }
+  }
+
+  &__hover-buttons {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 13px 0 15px 0;
+    background-color: $white;
+  }
+
+  .button {
+    flex: 1 0 100%;
+  }
+
+  &__button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__icon {
+    stroke: $accent;
+    width: 30px;
+    height: 20px;
+  }
+
+  &__out-of-stock {
+    color: $lighterRed;
+    font-size: 15px;
+    font-weight: 400;
+  }
+}

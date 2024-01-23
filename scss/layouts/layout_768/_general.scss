@@ -7,6 +7,12 @@ body {
   padding: 0 30px;
 }
 
+section {
+  &:not(:last-of-type) {
+    margin-bottom: 80px;
+  }
+}
+
 .headline {
   font-size: 20px;
 }

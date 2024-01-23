@@ -33,6 +33,12 @@ main {
   flex: 1;
 }
 
+section {
+  &:not(:last-of-type) {
+    margin-bottom: 60px;
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1290px + 32px;
@@ -44,6 +50,7 @@ main {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .subtitle {
@@ -63,11 +70,17 @@ a {
   }
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .button {
   padding: 20px;
   border-radius: 5px;
   border-width: 0;
   background-color: $accent;
+  font-size: 15px;
   line-height: 17px;
   font-weight: 700;
   font-family: $comfortaa;

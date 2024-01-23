@@ -1,0 +1,19 @@
+.sale-section {
+  .headline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &::after {
+      content: 'Sale';
+      padding: 5px;
+      margin-left: 10px;
+      border-radius: 10px;
+      background-color: $lightYellow;
+      font-size: 14px;
+      color: $discount;
+      text-transform: uppercase;
+    }
+  }
+}
