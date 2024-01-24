@@ -1,0 +1,10 @@
+.popular {
+  grid-template-columns: repeat(4, 1fr);
+
+  &__item {
+    &:nth-of-type(6) {
+      grid-row: 1 / span 2;
+      grid-column: 3;
+    }
+  }
+}

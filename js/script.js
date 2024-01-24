@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   toggleCatalog();
   toggleMobileSearch();
   runSlider();
+  runCarousel();
 });
 
 function toggleMobileMenu() {
@@ -110,4 +111,32 @@ function runSlider() {
   });
   document.querySelector('.slider__button_left').onclick = function () { slider.goTo('prev'); };
   document.querySelector('.slider__button_right').onclick = function () { slider.goTo('next'); };
-}
+};
+
+function runCarousel() {
+  var slider = tns({
+    container: '.carousel__list',
+    autoplay: true,
+    autoplayHoverPause: true,
+    controls: false,
+    nav: false,
+    items: 2,
+    gutter: 16,
+    preventScrollOnTouch: 'auto',
+    responsive: {
+      532: {
+        items: 3
+      },
+      822: {
+        gutter: 30
+      },
+      1086: {
+        items: 4
+      },
+      1350: {
+        items: 5
+      }
+    }
+  });
+  document.querySelector('.carousel__button').onclick = function () { slider.goTo('next'); };
+};

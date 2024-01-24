@@ -1,0 +1,86 @@
+.popular {
+  display: grid;
+  grid-auto-rows: 180px;
+  gap: 16px;
+
+  &__item {
+    border-radius: 20px;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: linear-gradient(208deg, #6AD245 0%, #58BE34 100%);
+
+      .popular__name {
+        background-color: $darkGreen;
+      }
+    }
+
+    &:nth-of-type(2) {
+      background-color: #F99C11;
+
+      .popular__name {
+        background-color: $darkOrange;
+      }
+    }
+
+    &:nth-of-type(3) {
+      background: linear-gradient(248deg, #2DEAE4 0%, #27D8D2 100%);
+
+      .popular__name {
+        background-color: $darkTeal;
+      }
+    }
+
+    &:nth-of-type(4) {
+      background: linear-gradient(247deg, #D84545 -1.64%, #CC3C3C 100%);
+
+      .popular__name {
+        background-color: $darkRed;
+      }
+    }
+
+    &:nth-of-type(5) {
+      background: linear-gradient(248deg, #A24FE2 0%, #8E3AD0 100%);
+
+      .popular__name {
+        background-color: $darkPurple;
+      }
+    }
+
+    &:nth-of-type(6) {
+      background: linear-gradient(208deg, #4F8AE2 0%, #3A73C9 100%);
+
+      .popular__name {
+        background-color: $darkLightBlue;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  &__img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+  }
+
+  &__name {
+    position: absolute;
+    bottom: 37px;
+    left: 30px;
+    max-width: 175px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 400;
+    color: $white;
+  }
+}

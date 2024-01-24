@@ -227,4 +227,7 @@
       </filter>
     </defs>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" id="arrow-right">
+    <path id="Vector 20" d="M9.79592 21L20 11M20 11L9.79592 1M20 11L-1.27154e-06 11" stroke="#D03664" stroke-width="2"></path>
+  </symbol>
 </svg>
