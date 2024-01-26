@@ -1,0 +1,21 @@
+.emailer-section {
+  background: url('../../../img/bg.svg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.emailer {
+  padding: 0;
+  flex-direction: row;
+
+  &__form {
+    input[type="email"] {
+      width: 300px;
+    }
+  }
+
+  &__img {
+    display: block;
+  }
+}

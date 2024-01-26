@@ -1,0 +1,70 @@
+.emailer-section {
+  background: $discount;
+}
+
+.emailer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  max-width: 1183px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 30px;
+  }
+
+  .headline {
+    margin: 0;
+    max-width: 335px;
+    color: $white;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    input[type="email"] {
+      padding: 15px;
+      width: 265px;
+      color: $white;
+      border-color: $white;
+      background: rgba(255, 255, 255, 0.15);
+
+      &::placeholder {
+        color: $white;
+      }
+
+      &:focus-visible {
+        border-color: $white;
+      }
+    }
+  }
+
+  &__button {
+    width: 62px;
+    height: 62px;
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+
+    &__icon {
+      width: 62px;
+      height: 62px;
+    }
+  }
+
+  &__img {
+    display: none;
+    width: 345px;
+  }
+}

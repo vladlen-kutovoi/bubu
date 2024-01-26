@@ -1,0 +1,21 @@
+.footer {
+  padding: 60px 0;
+
+  .container {
+    padding: 0 30px;
+    grid-template-columns: 300px auto;
+    gap: 40px 140px;
+
+    &>* {
+      padding: 0;
+    }
+
+    .contacts {
+      padding: 30px;
+    }
+  }
+}
+
+.contacts {
+  border-radius: 20px;
+}
