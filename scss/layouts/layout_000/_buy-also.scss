@@ -1,0 +1,9 @@
+buy-also-section {
+  margin-bottom: 60px;
+
+  .headline {
+    &::after {
+      display: none;
+    }
+  }
+}

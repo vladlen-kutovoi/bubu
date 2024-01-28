@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Slider  styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header class="login-header"></header>
+  <main>
+    <section class="login-section">
+      <div class="container">
+        <div class="login">
+          <img src="../img/logo-purple.png" alt="Bubu" class="login__img">
+          <span class="headline">Реєстрація</span>
+          <form class="login__form">
+            <lable class="visually-hidden" for="name">Ім'я</lable>
+            <input type="text" name="name" id="name" placeholder="Ім'я">
+            <lable class="visually-hidden" for="phone">Телефон</lable>
+            <input type="tel" name="phone" id="phone" placeholder="Телефон">
+            <lable class="visually-hidden" for="email">E-mail</lable>
+            <input type="email" name="login" id="email" placeholder="E-mail">
+            <lable class="visually-hidden" for="password">Пароль</lable>
+            <input type="password" name="password" id="password" placeholder="Пароль">
+            <input type="submit" value="зареєструватись" class="button">
+            <a href="login.html" class="button button_white">У мене є акаунт</a>
+          </form>
+          <div class="login__alternative">
+            <span class="login__alternative__title">Або</span>
+            <span>Увійти за допомогою:</span>
+            <div class="button-wrapper">
+              <button class="login__alternative__button">
+                <img src="../img/login-google.png" alt="Увійти за допомогою гугл" class="login__alternative__img">
+              </button>
+              <button class="login__alternative__button">
+                <img src="../img/login-facebook.png" alt="Увійти за допомогою фейсбук" class="login__alternative__img">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer login-footer"></footer>
+</body>
+
+</html>

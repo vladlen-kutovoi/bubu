@@ -230,4 +230,22 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" id="arrow-right">
     <path id="Vector 20" d="M9.79592 21L20 11M20 11L9.79592 1M20 11L-1.27154e-06 11" stroke="#D03664" stroke-width="2"></path>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20" id="filter">
+    <path d="M8.21951 7.21951L2 1H19L12.7805 7.21951V13.439L8.21951 18V7.21951Z" stroke="white"></path>
+  </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 39" id="silde-filter-button">
+    <g id="button">
+      <circle id="right" cx="19" cy="19.5" r="19" transform="rotate(-180 19 19.5)" fill="#D03664"></circle>
+      <path id="Vector 20" d="M18.8367 27.5L27 19.5M27 19.5L18.8367 11.5M27 19.5L11 19.5" stroke="white" stroke-width="2"></path>
+    </g>
+  </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 18" id="star">
+    <path id="Star 1" d="M8.54894 0.83858C8.8483 -0.0827303 10.1517 -0.0827305 10.4511 0.83858L11.8574 5.16685C11.9913 5.57887 12.3752 5.85783 12.8085 5.85783H17.3595C18.3282 5.85783 18.731 7.09745 17.9473 7.66685L14.2654 10.3419C13.9149 10.5965 13.7683 11.0479 13.9021 11.4599L15.3085 15.7882C15.6078 16.7095 14.5533 17.4756 13.7696 16.9062L10.0878 14.2312C9.7373 13.9765 9.2627 13.9765 8.91221 14.2312L5.23037 16.9062C4.44665 17.4756 3.39217 16.7095 3.69153 15.7882L5.09787 11.4599C5.23174 11.0479 5.08508 10.5965 4.7346 10.3419L1.05275 7.66685C0.269035 7.09745 0.67181 5.85783 1.64053 5.85783H6.19155C6.62477 5.85783 7.00873 5.57887 7.1426 5.16685L8.54894 0.83858Z"></path>
+  </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 20" id="location">
+    <g id="location">
+      <path id="Vector 28" d="M14.4377 7.71886C14.4377 11.6575 7.71886 19.0714 7.71886 19.0714C7.71886 19.0714 1 12.3526 1 7.71886C1 3.08516 4.70696 1 7.71886 1C10.7308 1 14.4377 3.78022 14.4377 7.71886Z" stroke="#D03664"></path>
+      <circle id="Ellipse 23" cx="7.95063" cy="7.48719" r="2.28022" stroke="#D03664"></circle>
+    </g>
+  </symbol>
 </svg>

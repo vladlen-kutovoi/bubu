@@ -1,0 +1,17 @@
+.side-filter {
+  position: static;
+  width: 234px;
+  height: auto;
+  padding: 0;
+  margin-right: 30px;
+  overflow: visible;
+  z-index: 0;
+
+  .button-wrapper {
+    display: none;
+  }
+
+  &__close {
+    display: none;
+  }
+}

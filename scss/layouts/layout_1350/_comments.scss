@@ -1,0 +1,7 @@
+.comments {
+  max-height: 798px;
+
+  &__item {
+    width: calc((100% - 60px)/3);
+  }
+}

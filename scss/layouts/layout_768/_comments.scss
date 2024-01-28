@@ -1,0 +1,17 @@
+.comment-section {
+  padding: 25px 0 80px 0;
+}
+
+.new-comment-button {
+  font-size: 15px;
+  line-height: 17px;
+}
+
+.comments {
+  gap: 30px;
+  max-height: 1085px;
+
+  &__item {
+    width: calc(50% - 15px);
+  }
+}

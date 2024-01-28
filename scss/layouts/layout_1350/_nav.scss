@@ -40,30 +40,41 @@
   margin: 0;
   border-radius: 20px 20px 0 0;
   background-color: $white;
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.07);
   cursor: default;
 
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 30px;
-    display: block;
-    width: 174px;
-    height: 1px;
-    background-color: $moreLightGrey;
+  &:hover {
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.07);
+
+    &~#catalog {
+      display: flex;
+    }
   }
 }
 
 #catalog {
   top: 137px;
   left: 30px;
-  display: block;
+  display: none;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.07);
   overflow: hidden;
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 30px;
+    display: block;
+    width: 174px;
+    height: 1px;
+    background-color: $moreLightGrey;
+  }
+
   &>.catalog__return {
     display: none;
+  }
+
+  &:hover {
+    display: block;
   }
 }
 
@@ -76,5 +87,15 @@
 
   &_active {
     left: 0;
+  }
+}
+
+.header_index {
+  .catalog-button {
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.07);
+  }
+
+  #catalog {
+    display: block;
   }
 }

@@ -1,0 +1,28 @@
+.details-section {
+  .container {
+    flex-direction: row;
+  }
+
+  .spoiler {
+    .headline {
+      &::after {
+        display: none;
+      }
+    }
+
+    &>* {
+      display: initial;
+    }
+
+    &__trigger {
+      cursor: auto;
+    }
+  }
+}
+
+.details {
+
+  &:first-of-type {
+    flex: 1 0 740px;
+  }
+}

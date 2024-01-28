@@ -1,0 +1,13 @@
+.shop-section {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "breadcrumbs breadcrumbs"
+      "headline headline"
+      "side-filter goods";
+  }
+}
+
+.tags {
+  display: none;
+}

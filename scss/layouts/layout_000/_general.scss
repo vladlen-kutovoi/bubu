@@ -99,7 +99,7 @@ img {
     border: 1px solid $accent;
     background-color: $white;
     color: $accent;
-    text-transform: capitalize;
+    text-transform: initial;
     transition: background-color 0.3s ease;
 
     &:hover,
@@ -151,6 +151,39 @@ input {
     clip: rect(0 0 0 0);
     overflow: hidden;
 
+    &+label {
+      font-weight: 300;
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &::before {
+        content: '';
+        display: block;
+        margin-right: 10px;
+        padding: 4px;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $grey;
+        border-radius: 2px;
+        box-sizing: border-box;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+        background-color: transparent;
+        transition: background-color 0.1s ease;
+      }
+    }
+
     &:checked+label::after {
       background-color: $accent;
     }
@@ -159,38 +192,6 @@ input {
 
 .input-error {
   color: $red;
-}
-
-label {
-  position: relative;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-
-  &::before {
-    content: '';
-    display: block;
-    margin-right: 10px;
-    padding: 4px;
-    width: 20px;
-    height: 20px;
-    border: 1px solid $grey;
-    border-radius: 2px;
-    box-sizing: border-box;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 2px;
-    background-color: transparent;
-    transition: background-color 0.1s ease;
-  }
 }
 
 .overlay {

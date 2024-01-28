@@ -1,0 +1,42 @@
+.shop-section {
+  .headline-wrapper {
+    padding: 0;
+  }
+}
+
+.sort-by {
+  position: static;
+  transform: translateY(0);
+  flex-direction: row;
+  padding: 0;
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &_active {
+      .sort-by__button {
+        color: $black;
+        text-decoration: none;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__button {
+    color: $grey;
+    text-decoration: underline;
+  }
+}
+
+.goods {
+  gap: 30px;
+  margin-bottom: 50px;
+
+  &__button-wrapper {
+    flex-direction: row;
+  }
+}

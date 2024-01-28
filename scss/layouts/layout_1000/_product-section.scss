@@ -1,0 +1,19 @@
+.product-main {
+  flex-direction: row;
+  margin-bottom: 82px;
+
+  .product-gallery-wrapper {
+    max-width: 630px;
+    height: 541px;
+  }
+
+  .product-gallery__item,
+  #tns1-mw {
+    height: 541px !important;
+  }
+}
+
+.product-main-els {
+  min-width: 454px;
+  width: 100%;
+}

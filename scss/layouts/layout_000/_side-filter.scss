@@ -1,0 +1,143 @@
+.side-filter {
+  grid-area: side-filter;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 294px;
+  height: 100vh;
+  max-height: 100vh;
+  padding: 30px 30px 77px 30px;
+  background-color: $white;
+  overflow: auto;
+  transition: left 0.2s ease;
+
+  &>* {
+    position: relative;
+
+    &:not(:last-child) {
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -30px;
+        transform: translateY(-50%);
+        width: 234px;
+        height: 1px;
+        background-color: $moreLightGrey;
+      }
+    }
+  }
+
+  .spoiler {
+    &_active {
+      .spoiler__list {
+        display: flex;
+      }
+    }
+
+    .subtitle {
+      margin-bottom: 20px;
+    }
+
+    &__list {
+      flex-direction: column;
+      gap: 15px;
+
+      &__item {
+        flex-direction: column;
+      }
+    }
+
+    &__link {
+      font-weight: 300;
+      color: $black;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__form {
+    label {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .button-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: -100%;
+    width: 294px;
+    padding: 10px;
+    background-color: $white;
+    transition: left 0.2s ease;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-family: $comfortaa;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+    background-color: $accent;
+    cursor: pointer;
+  }
+
+  &__close {
+    position: fixed;
+    top: 20px;
+    left: -100%;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 6;
+    transition: left 0.2s ease;
+
+    &:has(+.side-filter_active) {
+      left: 314px;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $white;
+    }
+
+    &::before {
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translateY(-50%) rotate(-45deg);
+    }
+  }
+
+  &_active {
+    left: 0;
+
+    .button-wrapper {
+      left: 0;
+    }
+  }
+}
