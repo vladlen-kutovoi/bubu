@@ -1,5 +1,5 @@
 .shop-section {
-  padding: 30px 0 60px 0;
+  padding-top: 30px;
 
   .headline-wrapper {
     grid-area: headline;
@@ -23,7 +23,7 @@
 
   &__item {
     font-weight: 300;
-    margin-right: 15px;
+    margin-right: 5px;
 
     &::after {
       content: ' >';
@@ -92,6 +92,7 @@
     background-color: transparent;
     cursor: pointer;
     font-family: $comfortaa;
+    letter-spacing: 0.6px;
   }
 }
 
@@ -214,6 +215,7 @@
 
       &_next {
         border-width: 0;
+        width: 16px;
       }
     }
 

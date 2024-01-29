@@ -45,6 +45,7 @@
     &__list {
       flex-direction: column;
       gap: 15px;
+      max-width: 230px;
 
       &__item {
         flex-direction: column;

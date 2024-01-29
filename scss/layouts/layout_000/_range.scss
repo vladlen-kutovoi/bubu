@@ -21,6 +21,7 @@
     position: relative;
     width: 234px;
     height: 28px;
+    margin-bottom: 13px;
   }
 
   &__line {
@@ -88,6 +89,22 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '-';
+      top: 50%;
+      left: 87px;
+      transform: translate(-50%, -50%);
+      color: $black;
+      font-family: $comfortaa;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: capitalize;
+    }
   }
 
   &__price-input {
@@ -97,7 +114,7 @@
     -moz-appearance: textfield;
 
     &:first-of-type {
-      margin-right: auto;
+      margin-right: 26px;
     }
 
     &:last-of-type {

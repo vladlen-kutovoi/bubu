@@ -11,6 +11,7 @@
 
   .headline {
     margin: 0;
+    text-transform: none;
   }
 
   .extra-buttons-wrapper {
@@ -90,6 +91,7 @@
 
   &__title {
     margin-right: 10px;
+    font-size: 17px;
   }
 
   &__number {

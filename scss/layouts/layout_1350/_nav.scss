@@ -8,6 +8,10 @@
 
   .main-menu {
     margin: 0 auto 0 0;
+
+    &__link {
+      font-size: 14px;
+    }
   }
 
   .catalog-button {
@@ -33,6 +37,10 @@
   }
 }
 
+.phone-link {
+  font-size: 17px;
+}
+
 .catalog-button {
   position: absolute;
   bottom: -16px;
@@ -52,7 +60,7 @@
 }
 
 #catalog {
-  top: 137px;
+  top: 132px;
   left: 30px;
   display: none;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.07);
@@ -81,6 +89,7 @@
 .catalog {
   top: 0;
   left: -100%;
+  padding: 30px;
   width: 234px;
   height: 598px;
   border-radius: 0 0 20px 20px;

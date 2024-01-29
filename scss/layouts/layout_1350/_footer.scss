@@ -1,6 +1,11 @@
 .footer {
   padding: 60px 0;
 
+  &__nav {
+    margin-bottom: 0;
+    column-gap: 100px;
+  }
+
   .container {
     padding: 0 30px;
     grid-template-columns: 300px auto;
@@ -12,6 +17,7 @@
 
     .contacts {
       padding: 30px;
+      margin-bottom: 0;
     }
   }
 }

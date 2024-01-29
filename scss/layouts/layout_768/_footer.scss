@@ -9,3 +9,19 @@
     flex-direction: row;
   }
 }
+
+.contacts {
+  .phone-link {
+    font-size: 20px;
+  }
+
+  .address {
+    line-height: 20px;
+  }
+}
+
+.footer-menu {
+  &_columns {
+    column-width: 192px;
+  }
+}
